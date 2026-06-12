@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu portifólio</title>
+
+<link rel="stylesheet" href="meu estilo/estilo.css">
+</head>
+
+    <body>
+
+        <header>
+            <h1>Eduarda Carvalho</h1>
+
+            <p>Desenvolvedora em Formação | Estudante de ADS</p>
+        </header>
+
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
+            <a href="App educativo/app.html">Jogo Educativo</a>
+        </nav>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+
+            <p>
+                Meu nome é Eduarda Carvalho e atualmente estou cursando 
+                Análise e Desenvolvimento de Sistemas(ADS) no IFRO-Campus Ariquemes.
+                Atualmente, estou em processo de formação acadêmica e 
+                busco ampliar meus conhecimentos em diferentes áreas da tecnologia, 
+                com um interesse especial em cibersegurança. Embora ainda esteja construindo minha trajetória profissional, 
+                estou buscando aprimorar minhas habilidades técnicas e 
+                adquirir experiência para atuar profissionalmente na área de tecnologia.
+            </p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+
+            <div class="habilidades"> 
+
+                <div class="card"> 
+                    <h3>HTML</h3> 
+                    <p>Estruturação e organização de páginas web.</p>
+                </div>
+
+                <div class="card"> 
+                        <h3>CSS</h3> 
+                        <p>Estilização moderna e responsiva.</p> 
+                </div> 
+                
+                <div class="card"> 
+                    <h3>JavaScript</h3> 
+                    <p>Interatividade e validação de formulários.</p> 
+                </div> 
+
+                <div class="card"> 
+                    <h3>Python</h3> 
+                    <p>Lógica de programação e desenvolvimento de soluções.</p> 
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+
+            <div class="contato">
+                <div class="informacoes-contato">
+                    <h3>Informações para Contato</h3>
+                    <p>📧 Email: ec4898140@gmail.com</p>
+                    <p>📱 Telefone: (69) 99212-8847</p>
+                    <p>💻 GitHub: <a href="https://github.com/EduardaCarvalhop" target="_blank">github.com/EduardaCarvalhop</a></p>
+                    <p>📍 Ariquemes - RO</p>
+                </div> 
+                
+                <form id="formulario"> 
+                        
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required minlength="3">
+
+                    <label for="email">Seu E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+                    <label for="data">Data para Contato</label>
+                    <input type="date" id="data" required>
+
+                    <label for="assunto">Assunto</label>
+
+                    <select id="assunto" required>
+                        <option value="">Selecione</option> 
+                        <option>Projetos</option>
+                        <option>Sugestão</option>
+                        <option>Parceria</option>
+                    </select>
+
+                    <p>Preferência de contato</p>
+
+                    <label>
+                        <input type="radio" name="origem" required>
+                        E-mail
+                    </label>
+
+                    <label>
+                        <input type="radio" name="origem">
+                        Whatsapp
+                    </label>
+
+                    <label>
+                        <input type="radio" name="origem">
+                        Telefone
+                    </label>
+
+                    <p>Áreas de Interesse</p>
+
+                    <label>
+                        <input type="checkbox">
+                        Banco de dados
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Desenvolvimento Web
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Cibersegurança
+                    </label>
+
+                    <label for="mensagem">Mensagem</label>
+
+                    <textarea
+                        id="mensagem"
+                        rows="5"
+                        placeholder="Digite sua mensagem"
+                        required>
+                    </textarea>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </div>    
+        </section>
+
+        <footer>
+            <p>2026 - Eduarda Carvalho</p>
+        </footer>
+
+        <script src="JS/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,148 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#f4f6f9;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#4f46e5,#7c3aed);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+header h1{
+font-size:2.8rem;
+margin-bottom:10px;
+}
+
+header p{
+opacity:.9;
+}
+
+nav{
+background:#312e81;
+display:flex;
+justify-content:center;
+gap:25px;
+padding:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+opacity:.8;
+}
+
+section{
+max-width:1100px;
+margin:30px auto;
+padding:30px;
+background:white;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+h2{
+color:#4f46e5;
+margin-bottom:20px;
+}
+
+.habilidades{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.card{
+    background:#f8fafc;
+    padding:20px;
+    border-left:5px solid #7c3aed;
+    border-radius:12px;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.informacoes-contato{
+background:#f8fafc;
+padding:25px;
+border-radius:12px;
+}
+
+.informacoes-contato p{
+margin-bottom:12px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+input, select, textarea{
+padding:12px;
+border:1px solid #d1d5db;
+border-radius:8px;
+font-size:1rem;
+}
+
+input:focus, select:focus, textarea:focus{
+outline:none;
+border-color:#7c3aed;
+}
+
+button{
+background:#7c3aed;
+color:white;
+border:none;
+padding:14px;
+border-radius:8px;
+cursor:pointer;
+font-size:1rem;
+font-weight:bold;
+transition:.3s;
+}
+
+button:hover{
+transform: scale(1.03);
+}
+
+footer{
+background:#312e81;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    align-items:center;
+}
+
+
+header h1{
+    font-size:2rem;
+}
+
+}
+
+@media(min-width:769px) and (max-width:1024px){
+.contato{
+    grid-template-columns:1fr;
+}
+}
